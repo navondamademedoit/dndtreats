@@ -287,9 +287,9 @@ const orderform = document.querySelector('#order-form')
 const contactform = document.querySelector('#contact-form')
 let date = document.querySelector('#date')
 let orderSubject = document.querySelector('#orderSubject')
-let contactSubject = document.querySelector('#subject')
+let contactSubject = document.querySelector('#contactSubject')
 let orderName = document.querySelector('#order-name')
-let contactName = document.querySelector('#name')
+let contactName = document.querySelector('#contact-name')
 
 
 
@@ -309,5 +309,5 @@ contactform.addEventListener('submit', (e) => {
   contactSubject.value = `Question: ${contactName.value}`
 
 
-  orderform.submit();
+  contactform.submit();
 });
