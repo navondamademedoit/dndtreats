@@ -281,3 +281,33 @@ setTimeout(() => {
 	const ad = document.querySelector('.eapps-link')
 	ad.style.display = 'none' ;
 }, 2000);
+
+
+const orderform = document.querySelector('#order-form')
+const contactform = document.querySelector('#contact-form')
+let date = document.querySelector('#date')
+let orderSubject = document.querySelector('#orderSubject')
+let contactSubject = document.querySelector('#subject')
+let orderName = document.querySelector('#order-name')
+let contactName = document.querySelector('#name')
+
+
+
+orderform.addEventListener('submit', (e) => {
+  e.preventDefault();
+  orderSubject.value = `Order: ${orderName.value} for ${date.value}`
+
+
+
+  orderform.submit();
+});
+
+
+
+contactform.addEventListener('submit', (e) => {
+  e.preventDefault();
+  contactSubject.value = `Question: ${contactName.value}`
+
+
+  orderform.submit();
+});

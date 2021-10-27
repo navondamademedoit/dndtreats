@@ -62,7 +62,7 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
 
-          <li><a class="nav-link scrollto" href="#Latest">Events</a></li>
+          <li><a class="nav-link scrollto" href="#events">Events</a></li>
   
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -110,7 +110,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>Our Journey</h3>
             <p>
-              Like most successful businesses, our story begins with passion. A love for chocolate combined with lots of hard work culminated in the doors of our Chocolate Shop opening for the first time in 2021. However we grow, we aim stay true to our mission: providing exquisitely delicious products and hands-on chocolate experiences delicious products and hands-on chocolate experiences to all our customers. We insist on using the best ingredients, and puttin our whole heart into every order. No wonder our customers keep coming back for more!
+              Like most successful businesses, our story begins with passion. A love for chocolate combined with lots of hard work culminated in the doors of our Chocolate Shop opening for the first time in 2021. However we grow, we aim to stay true to our mission: providing exquisitely delicious products and hands-on chocolate experiences to all our customers. We insist on using the best ingredients, and putting our whole heart into every order. No wonder our customers keep coming back for more!
             </p>
           </div>
         </div>
@@ -262,33 +262,33 @@
         <div class="section-title">
           <h2>Order</h2>
           <p>Start a Quote</p>
-          All order must be placed & paid a minimum of 24 before date needed.
+          All order must be placed & paid a minimum of 24 hours before date needed.
         </div>
 
-        <form >
+        <form id="order-form" class="formSubmit" target="_blank" action="https://formsubmit.co/fatguru88@gmail.com" method="POST"> 
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="order-name" class="form-control" id="order-name" placeholder="Your Name">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="date" class="form-control" id="date" placeholder="Date of event" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date of event">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Time needed" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time needed">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people" placeholder="Quantity of Items" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <input type="number" class="form-control" name="people" id="people" placeholder="Quantity of Items">
               <div class="validate"></div>
             </div>
           </div>
@@ -296,14 +296,9 @@
             <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
             <div class="validate"></div>
           </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-          </div>
+          <input type="hidden" name="_subject" value="Order" id="orderSubject">
           <div class="text-center"><button type="submit">Get a quote</button></div>
         </form>
-
       </div>
     </section><!-- End Book A Table Section -->
 
@@ -462,7 +457,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form id="contact-form" class="formSubmit" target="_blank" action="https://formsubmit.co/fatguru88@gmail.com" method="POST"> 
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -477,12 +472,10 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+
+              <input type="hidden" name="_subject" value="Question" id="contactSubject">
               <div class="text-center"><button type="submit">Send Message</button></div>
+              
             </form>
 
           </div>
