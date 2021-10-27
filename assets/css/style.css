@@ -195,7 +195,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo a {
   color: #fff;
-
   margin: 0;
   font-size: 1rem;
   font-weight: 700;
@@ -207,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Book a table button Menu
 --------------------------------------------------------------*/
-.book-a-table-btn {
+.book-a-table-btn, #thank button{
   margin: 0 0 0 15px;
   border: 2px solid #cda45e;
   color: #fff;
@@ -219,6 +218,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   transition: 0.3s;
 }
+
+
 
 .book-a-table-btn:hover {
   background: #cda45e;
@@ -1734,5 +1735,14 @@ section {
 }
 
 #thank h1{
-  font-size: 10rem;
+  font-size: 5rem;
+  color: #cda45e;
+}
+
+#thank button {
+  width: 10rem;
+  height: 5rem;
+  font-size: 1rem;
+  background: #293B5F;
+  color:white !important;
 }
