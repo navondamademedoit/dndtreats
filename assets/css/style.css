@@ -1516,7 +1516,7 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-form input, .contact .php-form textarea {
+.contact  input, .contact textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1525,31 +1525,31 @@ section {
   color: white;
 }
 
-.contact .php-form input::-webkit-input-placeholder, .contact .php-form textarea::-webkit-input-placeholder {
+.contact  input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
   color: #a49b89;
 }
 
-.contact .php-form input::-moz-placeholder, .contact .php-form textarea::-moz-placeholder {
+.contact  input::-moz-placeholder, .contact  textarea::-moz-placeholder {
   color: #a49b89;
 }
 
-.contact .php-form input::placeholder, .contact .php-form textarea::placeholder {
+.contact  input::placeholder, .contact  textarea::placeholder {
   color: #a49b89;
 }
 
-.contact .php-form input:focus, .contact .php-form textarea:focus {
+.contact input:focus, .contact textarea:focus {
   border-color: #cda45e;
 }
 
-.contact .php-form input {
+.contact  input {
   height: 44px;
 }
 
-.contact .php-form textarea {
+.contact  textarea {
   padding: 10px 12px;
 }
 
-.contact .php-form button[type="submit"] {
+.contact  button[type="submit"] {
   background: #cda45e;
   border: 0;
   padding: 10px 35px;
@@ -1558,7 +1558,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-form button[type="submit"]:hover {
+.contact  button[type="submit"]:hover {
   background: #d3af71;
 }
 
@@ -1736,7 +1736,7 @@ section {
 
 #thank h1{
   font-size: 5rem;
-  color: #cda45e;
+  color: #cda45e
 }
 
 #thank button {
