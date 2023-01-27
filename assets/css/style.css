@@ -1056,14 +1056,14 @@ section {
   position: relative;
 }
 
- .events::before {
+ /* .events::before {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-}
+} */
 
 .events .section-title h2 {
   color: #fff;
@@ -1071,6 +1071,13 @@ section {
 
 .events .container {
   position: relative;
+}
+
+#events img {
+  margin: 40px;
+  width: 90vw;
+  max-width: 600px;
+  border-radius: 15px;
 }
 
 @media (min-width: 1024px) {
