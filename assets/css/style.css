@@ -1469,12 +1469,11 @@ section {
   margin-top: 40px;
 }
 
-
-
-
-
-
-
+#contact img {
+  width: 95vw;
+  max-width: 500px;
+  margin: 20px;
+}
 .contact  input, .contact textarea {
   border-radius: 0;
   box-shadow: none;
