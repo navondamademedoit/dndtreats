@@ -1068,14 +1068,14 @@ section {
   position: relative;
 }
 
-/* .events::before {
+.events::before {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-} */
+}
 
 .events .section-title h2 {
   color: #fff;
@@ -1086,13 +1086,10 @@ section {
 }
 
 #events img {
-  margin: 10px;
-  height: 60vh;
+  margin: 5px;
+  height: 70vh;
   max-width: 600px;
   border-radius: 15px;
-}
-
-#certficate img {
 }
 
 @media (min-width: 1024px) {
